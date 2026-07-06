@@ -1,0 +1,11 @@
+# Servidor B: SOLO proxy TLS → Server A.
+# No necesita el repo ni archivos estáticos; todo lo sirve Server A en :8000.
+
+:443 {
+    tls internal
+    reverse_proxy {$SERVIDOR_A_IP}:{$SERVIDOR_A_PORT}
+}
+
+:80 {
+    redir https://{host}{uri} permanent
+}

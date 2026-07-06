@@ -1,0 +1,109 @@
+{
+  "tournament": "FIFA World Cup 2026",
+  "edition": 2026,
+  "start_date": "2026-06-11",
+  "group_stage_end": "2026-06-27",
+  "final_date": "2026-07-19",
+  "hosts": ["United States", "Mexico", "Canada"],
+  "format": {
+    "teams": 48,
+    "groups": 12,
+    "teams_per_group": 4,
+    "advance_rule": "Top 2 of each group + 8 best third-placed teams advance to the Round of 32",
+    "knockout_rounds": ["Round of 32", "Round of 16", "Quarter-finals", "Semi-finals", "Final"],
+    "total_matches": 104
+  },
+  "_notes": "Nombres en 'name' alineados con el dataset historico martj42 (international_results). 'display' es el nombre en espanol para la UI. Grupos segun el sorteo oficial (dic 2025); el admin puede corregirlos y se cruzan con la API en vivo.",
+  "groups": {
+    "A": [
+      {"name": "Mexico", "display": "Mexico", "code": "MEX", "confederation": "CONCACAF", "host": true},
+      {"name": "South Africa", "display": "Sudafrica", "code": "RSA", "confederation": "CAF", "host": false},
+      {"name": "South Korea", "display": "Corea del Sur", "code": "KOR", "confederation": "AFC", "host": false},
+      {"name": "Czech Republic", "display": "Chequia", "code": "CZE", "confederation": "UEFA", "host": false}
+    ],
+    "B": [
+      {"name": "Canada", "display": "Canada", "code": "CAN", "confederation": "CONCACAF", "host": true},
+      {"name": "Switzerland", "display": "Suiza", "code": "SUI", "confederation": "UEFA", "host": false},
+      {"name": "Qatar", "display": "Catar", "code": "QAT", "confederation": "AFC", "host": false},
+      {"name": "Bosnia and Herzegovina", "display": "Bosnia y Herzegovina", "code": "BIH", "confederation": "UEFA", "host": false}
+    ],
+    "C": [
+      {"name": "Brazil", "display": "Brasil", "code": "BRA", "confederation": "CONMEBOL", "host": false},
+      {"name": "Morocco", "display": "Marruecos", "code": "MAR", "confederation": "CAF", "host": false},
+      {"name": "Haiti", "display": "Haiti", "code": "HAI", "confederation": "CONCACAF", "host": false},
+      {"name": "Scotland", "display": "Escocia", "code": "SCO", "confederation": "UEFA", "host": false}
+    ],
+    "D": [
+      {"name": "United States", "display": "Estados Unidos", "code": "USA", "confederation": "CONCACAF", "host": true},
+      {"name": "Paraguay", "display": "Paraguay", "code": "PAR", "confederation": "CONMEBOL", "host": false},
+      {"name": "Australia", "display": "Australia", "code": "AUS", "confederation": "AFC", "host": false},
+      {"name": "Turkey", "display": "Turquia", "code": "TUR", "confederation": "UEFA", "host": false}
+    ],
+    "E": [
+      {"name": "Germany", "display": "Alemania", "code": "GER", "confederation": "UEFA", "host": false},
+      {"name": "Curacao", "display": "Curazao", "code": "CUW", "confederation": "CONCACAF", "host": false},
+      {"name": "Ivory Coast", "display": "Costa de Marfil", "code": "CIV", "confederation": "CAF", "host": false},
+      {"name": "Ecuador", "display": "Ecuador", "code": "ECU", "confederation": "CONMEBOL", "host": false}
+    ],
+    "F": [
+      {"name": "Netherlands", "display": "Paises Bajos", "code": "NED", "confederation": "UEFA", "host": false},
+      {"name": "Japan", "display": "Japon", "code": "JPN", "confederation": "AFC", "host": false},
+      {"name": "Tunisia", "display": "Tunez", "code": "TUN", "confederation": "CAF", "host": false},
+      {"name": "Sweden", "display": "Suecia", "code": "SWE", "confederation": "UEFA", "host": false}
+    ],
+    "G": [
+      {"name": "Belgium", "display": "Belgica", "code": "BEL", "confederation": "UEFA", "host": false},
+      {"name": "Egypt", "display": "Egipto", "code": "EGY", "confederation": "CAF", "host": false},
+      {"name": "Iran", "display": "Iran", "code": "IRN", "confederation": "AFC", "host": false},
+      {"name": "New Zealand", "display": "Nueva Zelanda", "code": "NZL", "confederation": "OFC", "host": false}
+    ],
+    "H": [
+      {"name": "Spain", "display": "Espana", "code": "ESP", "confederation": "UEFA", "host": false},
+      {"name": "Cape Verde", "display": "Cabo Verde", "code": "CPV", "confederation": "CAF", "host": false},
+      {"name": "Saudi Arabia", "display": "Arabia Saudita", "code": "KSA", "confederation": "AFC", "host": false},
+      {"name": "Uruguay", "display": "Uruguay", "code": "URU", "confederation": "CONMEBOL", "host": false}
+    ],
+    "I": [
+      {"name": "France", "display": "Francia", "code": "FRA", "confederation": "UEFA", "host": false},
+      {"name": "Senegal", "display": "Senegal", "code": "SEN", "confederation": "CAF", "host": false},
+      {"name": "Norway", "display": "Noruega", "code": "NOR", "confederation": "UEFA", "host": false},
+      {"name": "Iraq", "display": "Irak", "code": "IRQ", "confederation": "AFC", "host": false}
+    ],
+    "J": [
+      {"name": "Argentina", "display": "Argentina", "code": "ARG", "confederation": "CONMEBOL", "host": false},
+      {"name": "Algeria", "display": "Argelia", "code": "ALG", "confederation": "CAF", "host": false},
+      {"name": "Austria", "display": "Austria", "code": "AUT", "confederation": "UEFA", "host": false},
+      {"name": "Jordan", "display": "Jordania", "code": "JOR", "confederation": "AFC", "host": false}
+    ],
+    "K": [
+      {"name": "Portugal", "display": "Portugal", "code": "POR", "confederation": "UEFA", "host": false},
+      {"name": "Uzbekistan", "display": "Uzbekistan", "code": "UZB", "confederation": "AFC", "host": false},
+      {"name": "Colombia", "display": "Colombia", "code": "COL", "confederation": "CONMEBOL", "host": false},
+      {"name": "DR Congo", "display": "RD Congo", "code": "COD", "confederation": "CAF", "host": false}
+    ],
+    "L": [
+      {"name": "England", "display": "Inglaterra", "code": "ENG", "confederation": "UEFA", "host": false},
+      {"name": "Croatia", "display": "Croacia", "code": "CRO", "confederation": "UEFA", "host": false},
+      {"name": "Ghana", "display": "Ghana", "code": "GHA", "confederation": "CAF", "host": false},
+      {"name": "Panama", "display": "Panama", "code": "PAN", "confederation": "CONCACAF", "host": false}
+    ]
+  },
+  "venues": [
+    {"city": "Mexico City", "country": "Mexico", "stadium": "Estadio Azteca"},
+    {"city": "Guadalajara", "country": "Mexico", "stadium": "Estadio Akron"},
+    {"city": "Monterrey", "country": "Mexico", "stadium": "Estadio BBVA"},
+    {"city": "Toronto", "country": "Canada", "stadium": "BMO Field"},
+    {"city": "Vancouver", "country": "Canada", "stadium": "BC Place"},
+    {"city": "Atlanta", "country": "United States", "stadium": "Mercedes-Benz Stadium"},
+    {"city": "Boston", "country": "United States", "stadium": "Gillette Stadium"},
+    {"city": "Dallas", "country": "United States", "stadium": "AT&T Stadium"},
+    {"city": "Houston", "country": "United States", "stadium": "NRG Stadium"},
+    {"city": "Kansas City", "country": "United States", "stadium": "Arrowhead Stadium"},
+    {"city": "Los Angeles", "country": "United States", "stadium": "SoFi Stadium"},
+    {"city": "Miami", "country": "United States", "stadium": "Hard Rock Stadium"},
+    {"city": "New York New Jersey", "country": "United States", "stadium": "MetLife Stadium"},
+    {"city": "Philadelphia", "country": "United States", "stadium": "Lincoln Financial Field"},
+    {"city": "San Francisco Bay Area", "country": "United States", "stadium": "Levi's Stadium"},
+    {"city": "Seattle", "country": "United States", "stadium": "Lumen Field"}
+  ]
+}

@@ -1,0 +1,23 @@
+# Servidor A (ESTE equipo): backend FastAPI + modelos ML + SQLite + scheduler.
+# Uso:  docker compose -f deploy/docker-compose.backend.yml up -d --build
+# Entrenar una vez:  docker compose -f deploy/docker-compose.backend.yml exec backend python -m ml.train
+
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: backend/Dockerfile
+    container_name: wc2026-backend
+    env_file: ../.env
+    ports:
+      # Expuesto a la LAN para que el Servidor B haga reverse-proxy.
+      # En producción, restringe por firewall a la IP del Servidor B.
+      - "8000:8000"
+    volumes:
+      - ../data:/app/data                 # persiste app.db (SQLite) y data/raw
+      - ../ml/artifacts:/app/ml/artifacts # modelos entrenados (XGBoost/NN/Bayes)
+    restart: unless-stopped
+# NOTA: la imagen Docker incluye solo dependencias de servicio (Elo funciona siempre).
+# Para servir XGBoost/NN/Bayesiano dentro del contenedor hay que añadir xgboost+torch a
+# la imagen. Por simplicidad se RECOMIENDA correr el backend de forma nativa en el
+# Servidor A (el venv ya tiene todo y los 4 modelos) — ver DEPLOYMENT.md.

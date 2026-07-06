@@ -1,0 +1,24 @@
+# Caddy en el Servidor B: sirve la SPA y hace reverse-proxy de /api al Servidor A.
+# Variables (de ../.env): SERVIDOR_A_IP, SERVIDOR_A_PORT.
+
+{
+	# CA interna de Caddy para TLS en la LAN (instala su raíz en los clientes).
+	auto_https disable_redirects
+}
+
+:443 {
+	tls internal
+	encode gzip
+
+	# Las llamadas a la API se reenvían al Servidor A (donde corre el cómputo).
+	handle /api/* {
+		reverse_proxy {$SERVIDOR_A_IP}:{$SERVIDOR_A_PORT}
+	}
+
+	# La SPA (build estático) con fallback a index.html para el routing del cliente.
+	handle {
+		root * /srv
+		try_files {path} /index.html
+		file_server
+	}
+}

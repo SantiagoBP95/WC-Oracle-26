@@ -1,0 +1,24 @@
+# Servidor B (otro Linux con Docker): sirve la SPA y proxya /api al Servidor A.
+# Configura SERVIDOR_A_IP en ../.env apuntando a la IP LAN del Servidor A.
+# Uso:  docker compose -f deploy/docker-compose.frontend.yml up -d --build
+
+services:
+  frontend:
+    build:
+      context: ..
+      dockerfile: frontend/Dockerfile
+    container_name: wc2026-frontend
+    env_file: ../.env
+    environment:
+      - SERVIDOR_A_IP=${SERVIDOR_A_IP}
+      - SERVIDOR_A_PORT=${SERVIDOR_A_PORT}
+    ports:
+      - "443:443"
+    volumes:
+      - caddy_data:/data       # persiste la CA interna y certificados
+      - caddy_config:/config
+    restart: unless-stopped
+
+volumes:
+  caddy_data:
+  caddy_config:

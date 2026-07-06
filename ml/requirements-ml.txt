@@ -1,0 +1,23 @@
+# ===== Dependencias de entrenamiento ML/DL (Fases 2 y 3) =====
+# Instalar solo cuando se trabajen los modelos avanzados. Hereda del backend:
+#   pip install -r backend/requirements.txt -r ml/requirements-ml.txt
+
+# --- Fase 2: ML clásico ---
+scikit-learn>=1.5
+xgboost>=2.1
+lightgbm>=4.5
+optuna>=4.0                     # tuning de hiperparámetros
+
+# --- Fase 3: Deep Learning + Bayesiano ---
+# torch: instalar según tu plataforma/CUDA desde https://pytorch.org si hace falta GPU
+torch>=2.4
+pymc>=5.17                      # modelo jerárquico bayesiano
+arviz>=0.20                     # diagnóstico/visualización bayesiana
+
+# --- EDA / notebooks ---
+jupyterlab>=4.2
+matplotlib>=3.9
+seaborn>=0.13
+
+# --- Fuentes avanzadas (xG, etc.) ---
+soccerdata>=1.8                 # FBref / Understat (scraping respetuoso)

@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="30%" y2="100%">
+      <stop offset="0%" style="stop-color:#070f1c"/>
+      <stop offset="60%" style="stop-color:#0d1829"/>
+      <stop offset="100%" style="stop-color:#060d18"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="80"/>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+
+  <!-- Ambient glows -->
+  <circle cx="200" cy="400" r="400" fill="#34d399" opacity="0.06" filter="url(#glow)"/>
+  <circle cx="900" cy="1200" r="450" fill="#059669" opacity="0.05" filter="url(#glow)"/>
+  <circle cx="540" cy="960" r="500" fill="#0ea5e9" opacity="0.03" filter="url(#glow)"/>
+
+  <!-- Top section: Brand -->
+  <text x="540" y="200" font-family="system-ui,sans-serif" font-size="100" text-anchor="middle">⚽</text>
+  <text x="540" y="300" font-family="system-ui,sans-serif" font-size="80" font-weight="900" fill="#f1f5f9" text-anchor="middle">WC Oracle</text>
+  <text x="540" y="375" font-family="system-ui,sans-serif" font-size="80" font-weight="900" fill="#34d399" text-anchor="middle">2026</text>
+  <text x="540" y="430" font-family="system-ui,sans-serif" font-size="22" fill="#475569" text-anchor="middle" letter-spacing="2">PREDICCIONES CON INTELIGENCIA ARTIFICIAL</text>
+
+  <!-- Divider -->
+  <line x1="100" y1="470" x2="980" y2="470" stroke="#1f2c47" stroke-width="2"/>
+
+  <!-- Highlight box: Prediction result -->
+  <rect x="80" y="510" width="920" height="280" rx="20" fill="#0d1829" stroke="#34d399" stroke-width="2"/>
+
+  <rect x="80" y="510" width="920" height="60" rx="20" fill="#022c22"/>
+  <rect x="80" y="548" width="920" height="22" fill="#022c22"/>
+  <text x="540" y="549" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#6ee7b7" text-anchor="middle" letter-spacing="2">✓ PREDICCIÓN CORRECTA</text>
+
+  <text x="540" y="640" font-family="system-ui,sans-serif" font-size="36" fill="#94a3b8" text-anchor="middle">Brasil  vs  Marruecos</text>
+  <text x="540" y="710" font-family="system-ui,sans-serif" font-size="100" font-weight="900" fill="#34d399" text-anchor="middle">1 – 1</text>
+  <text x="540" y="762" font-family="system-ui,sans-serif" font-size="22" fill="#475569" text-anchor="middle">Marcador exacto predicho antes del partido</text>
+
+  <!-- Stats section -->
+  <text x="540" y="850" font-family="system-ui,sans-serif" font-size="18" fill="#334155" text-anchor="middle" letter-spacing="2">¿CÓMO LO HACE?</text>
+
+  <!-- Stat cards -->
+  <!-- Card 1 -->
+  <rect x="80" y="870" width="280" height="170" rx="16" fill="#0d1829" stroke="#1f2c47" stroke-width="1.5"/>
+  <text x="220" y="930" font-family="system-ui,sans-serif" font-size="52" font-weight="900" fill="#34d399" text-anchor="middle">Elo</text>
+  <text x="220" y="980" font-family="system-ui,sans-serif" font-size="18" fill="#64748b" text-anchor="middle">Rating de</text>
+  <text x="220" y="1005" font-family="system-ui,sans-serif" font-size="18" fill="#64748b" text-anchor="middle">equipos</text>
+
+  <!-- Card 2 -->
+  <rect x="400" y="870" width="280" height="170" rx="16" fill="#0d1829" stroke="#1f2c47" stroke-width="1.5"/>
+  <text x="540" y="920" font-family="system-ui,sans-serif" font-size="30" font-weight="900" fill="#34d399" text-anchor="middle">Dixon</text>
+  <text x="540" y="960" font-family="system-ui,sans-serif" font-size="30" font-weight="900" fill="#34d399" text-anchor="middle">-Coles</text>
+  <text x="540" y="1000" font-family="system-ui,sans-serif" font-size="18" fill="#64748b" text-anchor="middle">Poisson corregido</text>
+
+  <!-- Card 3 -->
+  <rect x="720" y="870" width="280" height="170" rx="16" fill="#0d1829" stroke="#1f2c47" stroke-width="1.5"/>
+  <text x="860" y="920" font-family="system-ui,sans-serif" font-size="38" font-weight="900" fill="#34d399" text-anchor="middle">10k+</text>
+  <text x="860" y="965" font-family="system-ui,sans-serif" font-size="18" fill="#64748b" text-anchor="middle">simulaciones</text>
+  <text x="860" y="993" font-family="system-ui,sans-serif" font-size="18" fill="#64748b" text-anchor="middle">Monte Carlo</text>
+
+  <!-- Features list -->
+  <line x1="100" y1="1075" x2="980" y2="1075" stroke="#1f2c47" stroke-width="1.5"/>
+  <text x="540" y="1120" font-family="system-ui,sans-serif" font-size="18" fill="#334155" text-anchor="middle" letter-spacing="2">INCLUIDO EN PLAN PRO</text>
+
+  <!-- Feature rows -->
+  <rect x="80" y="1140" width="920" height="68" rx="10" fill="#0d1829"/>
+  <text x="130" y="1183" font-family="system-ui,sans-serif" font-size="34">📊</text>
+  <text x="190" y="1178" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#e2e8f0">Dashboard</text>
+  <text x="190" y="1200" font-family="system-ui,sans-serif" font-size="16" fill="#64748b">Probabilidades de título en tiempo real</text>
+
+  <rect x="80" y="1222" width="920" height="68" rx="10" fill="#0d1829"/>
+  <text x="130" y="1265" font-family="system-ui,sans-serif" font-size="34">⚽</text>
+  <text x="190" y="1260" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#e2e8f0">Bracket completo</text>
+  <text x="190" y="1282" font-family="system-ui,sans-serif" font-size="16" fill="#64748b">Los 104 partidos con predicción 1X2</text>
+
+  <rect x="80" y="1304" width="920" height="68" rx="10" fill="#0d1829"/>
+  <text x="130" y="1347" font-family="system-ui,sans-serif" font-size="34">🎯</text>
+  <text x="190" y="1342" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#e2e8f0">BetBuilder</text>
+  <text x="190" y="1364" font-family="system-ui,sans-serif" font-size="16" fill="#64748b">Más de 40 mercados + combinador de cuotas</text>
+
+  <rect x="80" y="1386" width="920" height="68" rx="10" fill="#0d1829"/>
+  <text x="130" y="1429" font-family="system-ui,sans-serif" font-size="34">📈</text>
+  <text x="190" y="1424" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#e2e8f0">Rendimiento</text>
+  <text x="190" y="1446" font-family="system-ui,sans-serif" font-size="16" fill="#64748b">Aciertos del modelo partido a partido</text>
+
+  <rect x="80" y="1468" width="920" height="68" rx="10" fill="#0d1829"/>
+  <text x="130" y="1511" font-family="system-ui,sans-serif" font-size="34">🏟️</text>
+  <text x="190" y="1506" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#e2e8f0">Grupos</text>
+  <text x="190" y="1528" font-family="system-ui,sans-serif" font-size="16" fill="#64748b">12 grupos · prob. de clasificar por posición</text>
+
+  <rect x="80" y="1550" width="920" height="68" rx="10" fill="#0d1829"/>
+  <text x="130" y="1593" font-family="system-ui,sans-serif" font-size="34">🔄</text>
+  <text x="190" y="1588" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#e2e8f0">Recálculo en vivo</text>
+  <text x="190" y="1610" font-family="system-ui,sans-serif" font-size="16" fill="#64748b">Probabilidades actualizadas tras cada partido</text>
+
+  <!-- CTA -->
+  <rect x="80" y="1660" width="920" height="110" rx="55" fill="url(#green)"/>
+  <text x="540" y="1705" font-family="system-ui,sans-serif" font-size="36" font-weight="900" fill="#022c22" text-anchor="middle">Solicitar acceso Pro</text>
+  <text x="540" y="1748" font-family="system-ui,sans-serif" font-size="22" font-weight="600" fill="#064e3b" text-anchor="middle">wcoracle.team@gmail.com</text>
+
+  <!-- Bottom disclaimer -->
+  <text x="540" y="1820" font-family="system-ui,sans-serif" font-size="14" fill="#1e293b" text-anchor="middle">Solo uso educativo · No afiliada a la FIFA, UEFA ni CONMEBOL</text>
+  <text x="540" y="1845" font-family="system-ui,sans-serif" font-size="14" fill="#1e293b" text-anchor="middle">Aplicación independiente de análisis estadístico</text>
+</svg>

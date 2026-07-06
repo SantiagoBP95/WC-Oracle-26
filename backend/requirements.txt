@@ -1,0 +1,34 @@
+# ===== Núcleo del backend + stats de servicio (MVP, Fase 1) =====
+# Servir la API y ejecutar Elo + Dixon-Coles + Monte Carlo en tiempo de respuesta.
+
+# --- Web / API ---
+fastapi>=0.115
+uvicorn[standard]>=0.32
+python-multipart>=0.0.12        # formularios (login OAuth2 password flow)
+
+# --- Validación / settings ---
+pydantic>=2.9
+pydantic-settings>=2.6
+
+# --- Base de datos ---
+SQLAlchemy>=2.0.36
+alembic>=1.14
+
+# --- Seguridad ---
+PyJWT>=2.10                     # tokens JWT
+bcrypt>=4.2                     # hashing de contraseñas (uso directo, sin passlib)
+slowapi>=0.1.9                  # rate limiting
+
+# --- Datos / cálculo (necesarios al servir predicciones) ---
+numpy>=2.1
+pandas>=2.2
+scipy>=1.14
+httpx>=0.27                     # ingesta de CSV/APIs
+joblib>=1.4                     # cargar/guardar artefactos de modelos
+
+# --- Scheduler (refresco de resultados + recálculo) ---
+APScheduler>=3.10
+
+# --- Datos de jugadores ---
+statsbombpy>=1.0          # datos de eventos StatsBomb (WC 2018/2022, licencia libre)
+soccerdata>=0.6           # FBref / Understat scraping (acceso a estadísticas recientes)

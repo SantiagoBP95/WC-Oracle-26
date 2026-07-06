@@ -1,0 +1,53 @@
+# ---- Secrets / env ----
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---- Data / models (no versionar datos pesados ni artefactos) ----
+data/raw/
+data/*.db
+data/*.db-journal
+data/*.sqlite
+data/*.log
+backend/data/
+downloaded_files/
+
+# ---- Claude settings ----
+.claude/
+ml/artifacts/*
+!ml/artifacts/.gitkeep
+*.csv
+!data/seed/*.csv
+
+# ---- Node / frontend ----
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.local
+
+# ---- Caddy / TLS ----
+deploy/caddy_data/
+deploy/caddy_config/
+*.crt
+
+# ---- IDE / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

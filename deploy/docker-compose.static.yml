@@ -1,0 +1,19 @@
+services:
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./dist:/srv:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    environment:
+      SERVIDOR_A_IP: ${SERVIDOR_A_IP:-192.168.1.50}
+      SERVIDOR_A_PORT: ${SERVIDOR_A_PORT:-8000}
+
+volumes:
+  caddy_data:
+  caddy_config:

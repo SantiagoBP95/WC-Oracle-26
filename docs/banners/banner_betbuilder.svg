@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#060d18"/>
+      <stop offset="100%" style="stop-color:#0d1829"/>
+    </linearGradient>
+    <linearGradient id="cardgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1829"/>
+      <stop offset="100%" style="stop-color:#111f38"/>
+    </linearGradient>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="70"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Ambient glows -->
+  <circle cx="900" cy="200" r="350" fill="#34d399" opacity="0.05" filter="url(#softglow)"/>
+  <circle cx="150" cy="500" r="250" fill="#0ea5e9" opacity="0.05" filter="url(#softglow)"/>
+
+  <!-- Left side: text -->
+  <rect x="60" y="60" width="200" height="30" rx="15" fill="#111f38" stroke="#34d399" stroke-width="1" opacity="0.8"/>
+  <text x="160" y="80" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#34d399" text-anchor="middle" letter-spacing="1.5">🎯 BET BUILDER</text>
+
+  <text x="60" y="165" font-family="system-ui,sans-serif" font-size="56" font-weight="900" fill="#f1f5f9" letter-spacing="-1">Construye tu</text>
+  <text x="60" y="235" font-family="system-ui,sans-serif" font-size="56" font-weight="900" fill="#f1f5f9" letter-spacing="-1">apuesta con</text>
+  <text x="60" y="305" font-family="system-ui,sans-serif" font-size="56" font-weight="900" fill="#34d399" letter-spacing="-1">probabilidades IA</text>
+
+  <text x="60" y="355" font-family="system-ui,sans-serif" font-size="18" fill="#64748b">Mercados de goles, córners, tarjetas,</text>
+  <text x="60" y="378" font-family="system-ui,sans-serif" font-size="18" fill="#64748b">tiros a puerta y jugadores individuales.</text>
+
+  <!-- Feature list -->
+  <circle cx="76" cy="420" r="6" fill="#34d399"/>
+  <text x="95" y="425" font-family="system-ui,sans-serif" font-size="15" fill="#94a3b8">Resultado 1X2 · Más/Menos goles · BTTS</text>
+
+  <circle cx="76" cy="455" r="6" fill="#34d399"/>
+  <text x="95" y="460" font-family="system-ui,sans-serif" font-size="15" fill="#94a3b8">Córners · Tarjetas amarillas</text>
+
+  <circle cx="76" cy="490" r="6" fill="#34d399"/>
+  <text x="95" y="495" font-family="system-ui,sans-serif" font-size="15" fill="#94a3b8">Tiros a puerta por jugador (top 3 por equipo)</text>
+
+  <circle cx="76" cy="525" r="6" fill="#059669"/>
+  <text x="95" y="530" font-family="system-ui,sans-serif" font-size="15" fill="#94a3b8">Combinador de cuotas integrado</text>
+
+  <!-- Right side: BetBuilder mockup card -->
+  <rect x="620" y="50" width="530" height="540" rx="16" fill="url(#cardgrad)" stroke="#1f2c47" stroke-width="1.5"/>
+
+  <!-- Card header -->
+  <rect x="620" y="50" width="530" height="64" rx="16" fill="#111f38"/>
+  <rect x="620" y="98" width="530" height="16" fill="#111f38"/>
+  <text x="885" y="90" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#f1f5f9" text-anchor="middle">Mercados · España vs Argentina</text>
+
+  <!-- Section: Resultado -->
+  <text x="645" y="145" font-family="system-ui,sans-serif" font-size="11" fill="#475569" font-weight="600" letter-spacing="1">RESULTADO 1X2</text>
+  <!-- Row -->
+  <rect x="645" y="155" width="480" height="48" rx="8" fill="#0a1628"/>
+  <text x="665" y="183" font-family="system-ui,sans-serif" font-size="14" fill="#e2e8f0">Victoria local (1)</text>
+  <text x="990" y="183" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#34d399" text-anchor="end">47%</text>
+  <text x="1090" y="183" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#e2e8f0" text-anchor="end">2.13</text>
+
+  <!-- Section: Goles -->
+  <text x="645" y="225" font-family="system-ui,sans-serif" font-size="11" fill="#475569" font-weight="600" letter-spacing="1">GOLES</text>
+
+  <rect x="645" y="234" width="480" height="40" rx="8" fill="#0a1628"/>
+  <text x="665" y="259" font-family="system-ui,sans-serif" font-size="13" fill="#e2e8f0">Más de 2.5 goles</text>
+  <text x="990" y="259" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#34d399" text-anchor="end">54%</text>
+  <text x="1090" y="259" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#e2e8f0" text-anchor="end">1.85</text>
+
+  <rect x="645" y="280" width="480" height="40" rx="8" fill="#0a1628" opacity="0.6"/>
+  <text x="665" y="305" font-family="system-ui,sans-serif" font-size="13" fill="#64748b">Ambos equipos marcan</text>
+  <text x="990" y="305" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#94a3b8" text-anchor="end">61%</text>
+  <text x="1090" y="305" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#94a3b8" text-anchor="end">1.64</text>
+
+  <!-- Section: Jugadores -->
+  <text x="645" y="345" font-family="system-ui,sans-serif" font-size="11" fill="#475569" font-weight="600" letter-spacing="1">TIROS A PUERTA · JUGADOR LOCAL</text>
+
+  <rect x="645" y="355" width="480" height="48" rx="8" fill="#0a1628"/>
+  <text x="665" y="378" font-family="system-ui,sans-serif" font-size="14" fill="#e2e8f0" font-weight="600">Yamal</text>
+  <text x="665" y="395" font-family="system-ui,sans-serif" font-size="11" fill="#475569">1.24 SOT/90 · Combinado</text>
+  <!-- Lines within player -->
+  <text x="820" y="375" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">+0.5</text>
+  <text x="820" y="393" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#34d399">72%</text>
+  <text x="890" y="375" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">+1.5</text>
+  <text x="890" y="393" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">38%</text>
+  <text x="960" y="375" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">+2.5</text>
+  <text x="960" y="393" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">12%</text>
+
+  <!-- Combinator -->
+  <rect x="645" y="430" width="480" height="70" rx="10" fill="#022c22" stroke="#34d399" stroke-width="1.5"/>
+  <text x="665" y="455" font-family="system-ui,sans-serif" font-size="12" fill="#6ee7b7" font-weight="600" letter-spacing="1">COMBINADO SELECCIONADO</text>
+  <text x="665" y="480" font-family="system-ui,sans-serif" font-size="13" fill="#94a3b8">Victoria local + Más 2.5 + Yamal +0.5</text>
+  <text x="1000" y="472" font-family="system-ui,sans-serif" font-size="24" font-weight="900" fill="#34d399" text-anchor="end">×5.94</text>
+  <text x="1000" y="493" font-family="system-ui,sans-serif" font-size="12" fill="#34d399" text-anchor="end">prob. 16.8%</text>
+
+  <!-- Bottom tag -->
+  <text x="885" y="560" font-family="system-ui,sans-serif" font-size="11" fill="#334155" text-anchor="middle">WC Oracle 2026 · Solo uso educativo · No afiliado a la FIFA</text>
+</svg>
