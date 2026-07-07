@@ -34,6 +34,22 @@ async def lifespan(app: FastAPI):
 
 
 _prod = settings.environment == "production"
+
+# Fail-secure: en producción la app NO arranca con los secretos por defecto
+# (de lo contrario firmaría JWTs con un secreto público y sembraría admin/admin).
+if _prod:
+    _insecure = []
+    if settings.secret_key == "dev-insecure-change-me":
+        _insecure.append("SECRET_KEY")
+    if settings.admin_password == "admin":
+        _insecure.append("ADMIN_PASSWORD")
+    if _insecure:
+        raise RuntimeError(
+            "Configuración insegura en producción: define valores propios para "
+            + ", ".join(_insecure)
+            + " en el archivo .env"
+        )
+
 app = FastAPI(
     title=settings.app_name,
     version="0.1.0",
